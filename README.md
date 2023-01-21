@@ -1,3 +1,5 @@
-# Homework
-0  Cool :)  07
-HELLO! HELLO!
+
+
+
+
+This repository is for testing and learning ;) 
