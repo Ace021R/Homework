@@ -1,27 +1,24 @@
 #include<stdio.h>
 
-int printFibo (int n)
-{
- 	static int f1= 0, f2= 1, f3;
+int main () {
 
-	if(n > 0){
-		f3 = f1 + f2;
-		f1 = f2;
-		f2 = f3;
-	printf("%d ", f3);
-	printFibo(n - 1);
-	}
-}
-
-int main() {
+int i = 1, f1=1, f0=0, x, n;
 	
-	int n;
-	printf("Enter the number for fibonacci series:");
-	scanf("%d", &n);
-	printf("Fibonacci series for a given number: \n");
-	printf("%d %d ", 0, 1);
-	printFibo(n - 1); 
+printf("geben sie einen zahl ein: \n");
+scanf("%d", &n);
+
+	
+    for(i; i<=n; i++){
+        if(i<=1)
+            x = i;
+        else{
+            x=f1+f0;
+            f0=f1;
+            f1=x;
+    }
+}
+	printf("%d\n", x);
+	
 return 0;
 }
-
 
