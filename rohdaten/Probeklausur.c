@@ -3,7 +3,6 @@
 int main() {
     
 int preis, restbetrag, anzahl2Euro, anzahl50Cent, anzahl10Cent, anzahl5Cent;
-double zuBezahlen;
 
 printf("Geben Sie den preis in Cent ein: ");
 scanf("%d", &preis);
