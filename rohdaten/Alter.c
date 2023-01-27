@@ -7,13 +7,17 @@ int main ()  {
 	scanf("%d", &Alter);
 
 
-	if(Alter<=17){ 
+	if(Alter<=17 && Alter>0){ 
 		printf("\nKind/Jugendlicher\n");
-	}else if(Alter<=67){
+	}else if(Alter<=67 && Alter>17){
 		printf("Erwachsener ");
+	}else if(Alter>67){
+		printf("Rentner ");
 	}else{
-		printf("Rentner ");}
-
+		printf("Kein gültiger eingabe");
+	}
+	
+return 0;
 }
 
 
