@@ -4,17 +4,17 @@ int funk(int zahl1, int zahl2) {
     if (zahl1 == zahl2) 
         return zahl1;
         else if (zahl1 > zahl2)
-            return funk(zahl1-zahl2, zahl1);
+            return funk(zahl1-zahl2, zahl2);
             else {
-                return funk(zahl2, zahl2-zahl1);
+                return funk(zahl1, zahl2-zahl1);
             }
-            }
+}
        
 
 
 int main() {
     
-    int zahl1, zahl2, one;
+    int zahl1, zahl2;
     
 
     printf("geben sie das erste Zahl ein:  ");
